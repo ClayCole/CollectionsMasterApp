@@ -33,7 +33,7 @@ namespace CollectionsMasterConsoleUI
 
             //: Print the last number of the array
             // Could I just write: numbers[numbers.Length - 1];
-            Console.WriteLine($"{numbers[numbers.Length -1]}");
+            Console.WriteLine($"{numbers[numbers.Length -1]}"); // could also write it as (numbers[^1]);
 
 
 
@@ -140,7 +140,7 @@ namespace CollectionsMasterConsoleUI
 
             var myArray = numList.ToArray;
 
-            //TODO: Clear the list
+            //: Clear the list
             numList.Clear();
 
             #endregion
@@ -190,7 +190,7 @@ namespace CollectionsMasterConsoleUI
             while (numberList.Count <= 50)
             {
                 Random rng = new Random();
-                var number = rng.Next(0, 50);
+                var number = rng.Next(0, 51);
 
                 numberList.Add(number);
             }
@@ -203,7 +203,7 @@ namespace CollectionsMasterConsoleUI
             for (int i = 0; i < numbers.Length; i++)
             {
                 Random rng = new Random();
-                numbers[i] = rng.Next(0, 50);
+                numbers[i] = rng.Next(0, 51);
             }
 
         }
