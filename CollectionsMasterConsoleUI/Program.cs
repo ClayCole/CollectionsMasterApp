@@ -77,6 +77,12 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("\n************End Arrays*************** \n");
             #endregion
 
+
+
+
+
+
+
             #region Lists
             Console.WriteLine("************Start Lists**************");
 
@@ -109,6 +115,7 @@ namespace CollectionsMasterConsoleUI
                 isANumber = int.TryParse(Console.ReadLine(), out userNumber);
 
             } while (isANumber == false);
+
             NumberChecker(numList, userNumber);
 
 
@@ -138,12 +145,12 @@ namespace CollectionsMasterConsoleUI
 
             //: Convert the list to an array and store that into a variable
 
-            var myArray = numList.ToArray;
+            var myArray = numList.ToArray();
 
             //: Clear the list
             numList.Clear();
 
-            #endregion
+            #endregion`    
         }
 
         private static void ThreeKiller(int[] numbers)
